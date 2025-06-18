@@ -1,0 +1,94 @@
+/* === Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Body === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Container Umum === */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+/* === Box Selamat Datang === */
+.welcome-box {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* === Heading & Paragraf === */
+.welcome-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* === Tabel Info === */
+.info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.info-table td {
+    padding: 8px 12px;
+    text-align: left;
+    color: #333;
+}
+
+.info-table td.label {
+    font-weight: bold;
+    width: 30%;
+    color: #555;
+}
+
+/* === Tombol Logout === */
+.logout-btn {
+    background-color: #FC5C7D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #e04e6e;
+}
+
+/* === Responsif === */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px;
+    }
+
+    .welcome-box {
+        padding: 20px;
+    }
+}
